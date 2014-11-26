@@ -1,0 +1,21 @@
+#dayCareCalendar {
+	width:800px;
+}
+.dayCareContent {
+	display:inline-block;
+}
+#dayCareInfo {
+	vertical-align:top;
+}
+.selected {
+	font-weight:bold;
+}
+.indicatorImg {
+	margin-left:10px;
+}
+.modal {
+	z-index:10 !important;
+}
+.blocker {
+	z-index:9 !important;
+}

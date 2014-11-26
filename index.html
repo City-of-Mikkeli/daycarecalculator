@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Mikkelin Kaupunki">
+    <title>Päivähoito laskuri</title>
+    <link rel="stylesheet" href="/css/fullcalendar.css">
+    <link rel="stylesheet" href="/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="/css/jquery.modal.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+  </head>
+  <body>
+    <div id="dayCareContainer">
+        <div class="dayCareContent" id="dayCareCalendar"></div>
+        <div class="dayCareContent" id="dayCareInfo">
+        <table>
+			<!-- <tr id="dayCareClass_1"><td>ei yhtään h/kk</td><td class="percentageValue">&nbsp;0&#37;</td></tr>  -->
+			<tr id="dayCareClass_2"><td>enintään 35 h/kk</td><td class="percentageValue">&nbsp;30&#37;</td></tr>
+			<tr id="dayCareClass_3"><td>enintään 60 h/kk</td><td class="percentageValue">&nbsp;40&#37;</td></tr>
+			<tr id="dayCareClass_4"><td>enintään 85 h/kk</td><td class="percentageValue">&nbsp;50&#37;</td></tr>
+			<tr id="dayCareClass_5"><td>enintään 115 h/kk</td><td class="percentageValue">&nbsp;60&#37;</td></tr>
+			<tr id="dayCareClass_6"><td>enintään 135 h/kk</td><td class="percentageValue">&nbsp;80&#37;</td></tr>
+			<tr id="dayCareClass_7"><td>enintään 160 h/kk</td><td class="percentageValue">&nbsp;90&#37;</td></tr>
+			<tr id="dayCareClass_8"><td>yli 160- h/kk</td><td class="percentageValue">&nbsp;100&#37;</td></tr>
+        </table>
+        <p>Tunnit yhteensä:&nbsp;<span id="dayCareTotal"></span></p>
+        </div>
+    </div>
+    <div class="instructions">
+        <p>Voit käyttää tätä laskuria apuna arvioitaessa päivähoidon tarvetta. <br/>
+        Ennen käyttöä on suositeltavaa tutustua <a target="_blank" href="http://www.mikkeli.fi/files/atoms/files/paivahoitomaksut_2013-2014.pdf">päivähoidon asiakasmaksuihin</a>.</p>
+        <p>Laskurin käyttö tapahtuu klikkaamalla päivää jolloin päivähoitoa tarvitaan jonka jälkeen avautuu ikkuna josta valitaan milloin tarve alkaa ja milloin päättyy.<br/>
+        Voit syöttää päivähoidon kerralla myös useammalle päivälle klikkaamalla ja raahaamalla useamman päivän ylitse.</p>
+        <p>Kun olet laittanut päivähoito merkintöjä kalenteriin voit poistaa niitä painikkeella:&nbsp;<img src='/img/delete.png' /> tai muokata painikkeella:&nbsp;<img src='/img/edit.png' /></p>
+    </div>
+    <div id="addDayCareModal" class="modal">
+      <table id="dayCareTime">
+	      <tr>
+	       <td>Hoito alkaa:</td><td><input id="dayCareStarted" type="text" class="time start" /></td>
+	      </tr>
+	      <tr>
+	       <td>Hoito päättyy:</td><td><input id="dayCareEnded" type="text" class="time end" /></td>
+	      </tr>
+      </table>
+      <button id="saveCareBtn">Tallenna</button>
+    </div>
+  </body>
+  <script type="text/javascript" src="/js/jquery-1.11.0.min.js" ></script>
+  <script type="text/javascript" src="/js/fullcalendar.min.js" ></script>
+  <script type="text/javascript" src="/js/jquery.timepicker.js" ></script>
+  <script type="text/javascript" src="/js/jquery.datepair.js" ></script>
+  <script type="text/javascript" src="/js/jquery.modal.min.js" ></script>
+  <script type="text/javascript" src="/js/main.js" ></script>
+</html>

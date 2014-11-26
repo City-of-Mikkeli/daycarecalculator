@@ -1,0 +1,9 @@
+{
+     "name": "daycarecalculator",
+     "description": "Quick app to list help users calculate hours used for daycare",
+     "version": "0.0.1",
+     "dependencies": {
+        "express": ""
+     },
+     "license": "AGPLv3"
+}
